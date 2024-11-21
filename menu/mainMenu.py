@@ -1,6 +1,7 @@
 from menu.exercisesOne import designOneList,designOneDict
 from menu.exercisesTwo import designTwoList,designTwoDict
 from menu.exercisesThree import designThreeList,designThreeDict
+from menu.exercisesFour import designFourList
 import os
 #Menu Principal
 def Main_menu():
@@ -42,7 +43,8 @@ def MenuListExercises():
    | 1. Ejercicio 1.                 |
    | 2. Ejercicio 2.                 |
    | 3. Ejercicio 3.                 |
-   | 4. Volver al menu principal     |
+   | 4. Ejercicio 4                  |
+   | 5.Volver al menu principal      |    
    |=================================|
     -ingrese un numero del (1-4):"""))
         
@@ -56,7 +58,10 @@ def MenuListExercises():
                 case 3: 
                     os.system('clear')
                     designThreeList()
-                case 4:
+                case 4: 
+                    os.system('clear')
+                    designFourList()
+                case 5:
                     os.system('clear')
                     return #Volver al menu principal
                 case _: print ("Opcion no valida.")
